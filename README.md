@@ -3,7 +3,7 @@ Wisconsin Card Sorting Test Perseveration Scoring Script
 
 This script contains the logic used to score Heaton's Wisconsin Card Sorting Test. 
 
-This script was designed to score tests in the .iqdat file format, but it could easily be adapted for any csv-format test results. In its current format, the script expects to find files containing a single test result each (including all the trials for that test in the single file). The files should be arranged in the following directory structure:
+This script was designed to score tests in the Inquisit 4 software's .iqdat file format, but it could easily be adapted for any csv-format test results. In its current format, the script expects to find files containing a single test result each (including all the trials for that test in the single file). The files should be arranged in the following directory structure:
 
     /WCST_Scoring.py
     /TEST_NUM/CLASS_NUM/subject_1_test_results.iqdat
@@ -15,7 +15,7 @@ Where test_num is the iteration of tests performed, in case you performed multip
 
 Each test file is arranged in a whitespace-seperated format with one line as a header. The format that the software produces leaves a lot of useless data, so at the top of the script are a few global variables definining the columns wherein we find the appropriate data. If your file contains different columns, this is a simple place to adjust that.
 
-The file format the script expects (Inquisit 4 testing result data) currently looks like this:
+The file format the script expects (Inquisit 4 testing result data) looks like this:
 
     build	date	time	subject	group	blockcode	blocknum	trialcode	trialnum	stimulusitem1	response	correct	latency
     4.0.10.0	41917	8:52:02	1	1	color	1	color_GreenTriangle1	1	GreenTriangle1.jpg	RedTriangle1	0	5847
