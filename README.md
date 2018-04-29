@@ -5,13 +5,17 @@ This script contains the logic used to score Heaton's Wisconsin Card Sorting Tes
 
 This script was designed to score tests in the .iqdat file format, but it could easily be adapted for any csv-format test results. In its current format, the script expects to find files containing a single test result each (including all the trials for that test in the single file). The files should be arranged in the following directory structure:
 
-    /TEST_NUM/CLASS_NUM/test_results.csv
+    /WCST_Scoring.py
+    /TEST_NUM/CLASS_NUM/subject_1_test_results.iqdat
+    /TEST_NUM/CLASS_NUM/subject_2_test_results.iqdat
+    /TEST_NUM/CLASS_NUM/subject_3_test_results.iqdat
+    ...etc
 
 Where test_num is the iteration of tests performed, in case you performed multiple tests on the same class over time, and class_num is the name or ID of a particular class. Each individual student's test results should be in an individual test file in that folder. These details are largely cosmetic, but that's just the way the script works now.
 
 Each test file is arranged in a whitespace-seperated format with one line as a header. The format that the software produces leaves a lot of useless data, so at the top of the script are a few global variables definining the columns wherein we find the appropriate data. If your file contains different columns, this is a simple place to adjust that.
 
-The file format the script expects currently looks like this:
+The file format the script expects (Inquisit 4 testing result data) currently looks like this:
 
     build	date	time	subject	group	blockcode	blocknum	trialcode	trialnum	stimulusitem1	response	correct	latency
     4.0.10.0	41917	8:52:02	1	1	color	1	color_GreenTriangle1	1	GreenTriangle1.jpg	RedTriangle1	0	5847
@@ -26,6 +30,6 @@ It is important to note that the script is set up to require the capitalization 
 
 The result will be a slew of individual analysis files and one summary file per class per test. Subsequent runs of the script will append to the existing files (if any) so be sure to remove the results of previous runs.
 
-Feel free to contact me if you can find some use for the script and I would be happy to help you adjust this for your use case.
+Feel free to contact me (wyko.ter.haar+wcst@gmail.com) if you can find some use for the script and I would be happy to help you adjust this for your use case.
 
 If you do use this for your work, feel free to do so. Just please let me know and include my name in your attributions.
