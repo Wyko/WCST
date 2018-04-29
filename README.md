@@ -24,7 +24,7 @@ Each test file is arranged in a whitespace-seperated format with one line as a h
 
 If your file contains different columns, this is a simple place to adjust that.
 
-The file format the script expects (Inquisit 4 testing result data) looks like this:
+The file format which the script expects (Inquisit 4 testing result data) looks like this:
 
     build	date	time	subject	group	blockcode	blocknum	trialcode	trialnum	stimulusitem1	response	correct	latency
     4.0.10.0	41917	8:52:02	1	1	color	1	color_GreenTriangle1	1	GreenTriangle1.jpg	RedTriangle1	0	5847
