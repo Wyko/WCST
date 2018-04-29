@@ -13,7 +13,16 @@ This script was designed to score tests in the Inquisit 4 software's .iqdat file
 
 Where test_num is the iteration of tests performed, in case you performed multiple tests on the same class over time, and class_num is the name of a particular group of test subjects. Each individual subject's test results should be in an individual test file in that folder. These details are largely cosmetic, but that's just the way the script works now.
 
-Each test file is arranged in a whitespace-seperated format with one line as a header. The format that the software produces leaves a lot of useless data, so at the top of the script are a few global variables definining the columns wherein we find the appropriate data. If your file contains different columns, this is a simple place to adjust that.
+Each test file is arranged in a whitespace-seperated format with one line as a header. The format that the software produces leaves a lot of useless data, so at the top of the script are a few global variables definining the columns wherein we find the appropriate data. 
+
+    # Variables which contain the column numbers, used for readability
+    SUBJECT = 3
+    MATCH = 5
+    SET = 6
+    STIMULUS = 9
+    RESPONSE = 10
+
+If your file contains different columns, this is a simple place to adjust that.
 
 The file format the script expects (Inquisit 4 testing result data) looks like this:
 
