@@ -37,7 +37,7 @@ Of these, only the Subject (the test-taker's ID), Blockcode (the currently corre
 
 It is important to note that the script is set up to require the capitalization and formating to be exactly according to this format. The Blockcode must be lowercase "form", "color", or "number". The Stimulus must be ColorShape#.jpg, and the response is ColorShape#.
 
-The result will be a slew of individual analysis files and one summary file per class per test. Subsequent runs of the script will append to the existing files (if any) so be sure to remove the results of previous runs.
+To run the script just place it in the same folder which contains the TEST_NUM-labled folders (see the directory structure, above) and run it with no arguments passed. The result will be a slew of individual analysis files and one summary file per class per test. Subsequent runs of the script will append to any existing analysis or summary files (if any) so be sure to remove the results of previous runs.
 
 Feel free to contact me (wyko.ter.haar+wcst@gmail.com) if you can find some use for the script and I would be happy to help you adjust this for your use case.
 
